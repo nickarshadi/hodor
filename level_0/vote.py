@@ -17,7 +17,7 @@ while win < votes and fail < 100:
         if response.status_code is 200 and sucess in response.text:
             fail = 0
             win += 1
-            print("{} wins!".format(win))
+            print("{} ok!".format(win))
     except Exception as e:
         print(e)
         fail += 1
